@@ -7,7 +7,7 @@ import org.example.plugin.ExamplePlugin;
 public class RegisterManager {
 
     public static void registerCommands(ExamplePlugin plugin) {
-        final String PACKAGE_NAME = "dev.rm20.anglersalmanac.Commands";
+        final String PACKAGE_NAME = "org.example.plugin.Commands";
         try {
             ClassPath classPath = ClassPath.from(plugin.getClass().getClassLoader());
             int count = 0;
@@ -40,7 +40,7 @@ public class RegisterManager {
     }
 
     public static void registerEvents(ExamplePlugin plugin) {
-        final String PACKAGE_NAME = "dev.rm20.anglersalmanac.Events";
+        final String PACKAGE_NAME = "org.example.plugin.Events";
         try {
             ClassPath classPath = ClassPath.from(plugin.getClass().getClassLoader());
             int count = 0;
